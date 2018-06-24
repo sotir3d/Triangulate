@@ -4,10 +4,9 @@ using UnityEngine;
 
 public class PlayerMovement : MonoBehaviour
 {
-    float moveSpeed = 20;
+    public float moveSpeed = 20;
 
     Rigidbody2D rigidBody;
-
 
     // Use this for initialization
     void Start()
@@ -18,8 +17,8 @@ public class PlayerMovement : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-
         rigidBody.velocity = new Vector2(Input.GetAxis("Horizontal") * moveSpeed, Input.GetAxis("Vertical") * moveSpeed);
-
     }
+
+    
 }
